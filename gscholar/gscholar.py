@@ -41,6 +41,11 @@ except ImportError:
     # python 3
     from html.entities import name2codepoint
 
+try:
+    input = raw_input
+except NameError:
+    pass
+
 import re
 import hashlib
 import random
